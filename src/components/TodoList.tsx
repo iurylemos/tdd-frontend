@@ -23,7 +23,7 @@ export const TodoList: React.FC = () => {
                 <input data-testid="form-field" type="text" onChange={handleInput} placeholder="Type a new task here" value={task} />
                 <button data-testid="form-btn" type="submit">Add new task</button>
             </form>
-            <table>
+            <table data-testid="table">
                 <tbody>
                     {
                         (tasks && tasks.length) ? tasks.map((t, idx) => (
